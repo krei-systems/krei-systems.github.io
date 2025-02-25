@@ -55,16 +55,16 @@ params:
 
   logos:
       - identifier: a
-        image: "images/global/l1.png"
+        image: "/assets/images/global/l1.png"
         alt: "a"
       - identifier: b
-        image: "images/global/l2.png"
+        image: "/assets/images/global/l2.png"
         alt: "b"
       - identifier: c
-        image: "images/global/l3.png"
+        image: "/assets/images/global/l3.png"
         alt: "c"
       - identifier: d
-        image: "images/global/l4.png"
+        image: "/assets/images/global/l4.png"
         alt: "d"
 
   social_media:
