@@ -37,16 +37,16 @@ layout: vide
   <!-- Image Gallery Section -->
   <div class="gallery-grid">
     <div class="gallery-item">
-      <img src="/assets/images/global/1.png" alt="KREI Vide Technology" class="gallery-image">
+      {{< asset-img src="1.png" alt="KREI Vide Technology" class="gallery-image" >}}
     </div>
     <div class="gallery-item">
-      <img src="/assets/images/global/2.png" alt="KREI Vide Technology" class="gallery-image">
+      {{< asset-img src="2.png" alt="KREI Vide Technology" class="gallery-image" >}}
     </div>
     <div class="gallery-item">
-      <img src="/assets/images/global/3.png" alt="KREI Vide Technology" class="gallery-image">
+      {{< asset-img src="3.png" alt="KREI Vide Technology" class="gallery-image" >}}
     </div>
     <div class="gallery-item">
-      <img src="/assets/images/global/4.png" alt="KREI Vide Technology" class="gallery-image">
+      {{< asset-img src="4.png" alt="KREI Vide Technology" class="gallery-image" >}}
     </div>
   </div>
     <!-- Feature Section -->

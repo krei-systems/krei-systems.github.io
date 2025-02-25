@@ -13,7 +13,7 @@ const config = {
     maxParticles: 100,
     connectionDistance: 150,
     mouseRadius: 100,
-    colors: ['#4285f4', '#34a853', '#fbbc05', '#ea4335'],
+    colors: ['#FD8128', '#1A140B', '#ffffff'],
     speed: 1
 };
 
