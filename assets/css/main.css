@@ -97,7 +97,7 @@
 
 .hero-title {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #fff;
 }
 
@@ -251,13 +251,6 @@
     font-size: 8rem;
     line-height: 1;
   }
-}
-.section-title {
-  color: #FD8128;
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1.5rem;
 }
 .orange-divider {
   background-color: #FD8128;
