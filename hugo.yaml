@@ -1,0 +1,140 @@
+baseURL: '/'
+title: Krei Systems
+languageCode: en-us
+DefaultContentLanguage: en
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+pagination:
+  pagerSize: 6
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  moto: "EXPLORE. DISCOVER. CREATE."
+  description: "Harnessing knowledge, driving resourcefulness, fostering empowerment, and igniting innovation—KREI transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress."
+  disable_theme_toggle: false
+  disable_stay_uptodate: false
+
+
+  logos:
+      - identifier: a
+        image: "images/global/l1.png"
+        alt: "a"
+      - identifier: b
+        image: "images/global/l2.png"
+        alt: "b"
+      - identifier: c
+        image: "images/global/l3.png"
+        alt: "c"
+      - identifier: d
+        image: "images/global/l4.png"
+        alt: "d"
+
+  social_media:
+    github:
+      enabled: true
+      url: ''
+    facebook:
+      enabled: true
+      url: ''
+    twitter:
+      enabled: true
+      url: ''
+    
+menus:
+  main:
+  - name: Home
+    pageRef: /
+    weight: 10
+  - name: Vide
+    pageRef: /vide
+    weight: 20
+  - name: Team
+    pageref: /team
+    weight: 30
+  - identifier: Elevator Pitch
+    name: Elevator Pitch
+    weight: 40
+    url: /elevator-pitch
+  footer:
+    - identifier: Home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: Privacy Policy
+      name: Privacy Policy
+      url: /privacy-policy
+      weight: 30
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.114.0"

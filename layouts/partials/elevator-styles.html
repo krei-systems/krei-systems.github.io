@@ -1,0 +1,191 @@
+<style>
+  .elevator-pitch-page-main * {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  .elevator-pitch-page-main,
+  .elevator-pitch-page-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: #100B06;
+    color: #ffffff;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+  }
+  .elevator-pitch-page-main .container,
+  .elevator-pitch-page-main .mx-auto,
+  .elevator-pitch-page-main .px-4 {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .elevator-pitch-container {
+      max-width: 50%;
+      margin: 0 auto;
+      padding: 80px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .logo-container {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #ffffff;
+      position: relative;
+      padding-left: 15px;
+    }
+    
+    .logo::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 70%;
+      background: #ff6b00;
+      border-radius: 2px;
+    }
+    
+    .tagline {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.7);
+      margin-top: 10px;
+      margin-bottom: 60px;
+      letter-spacing: 1px;
+    }
+    
+    .content-section {
+      margin-bottom: 40px;
+      position: relative;
+    }
+    
+    .content-section p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+    }
+    
+    .content-section p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .highlight {
+      color: #ff6b00;
+      font-weight: 500;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .highlight::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 6px;
+      background: rgba(255,107,0,0.15);
+      bottom: 2px;
+      left: 0;
+      z-index: -1;
+      border-radius: 4px;
+    }
+    
+    .product-name {
+      font-style: italic;
+    }
+    
+    .accent-line {
+      position: absolute;
+      left: -40px;
+      top: 10px;
+      bottom: 10px;
+      width: 1px;
+      background: linear-gradient(to bottom, rgba(255,107,0,0) 0%, rgba(255,107,0,0.8) 50%, rgba(255,107,0,0) 100%);
+    }
+    
+    .cta-container {
+      margin-top: 80px;
+      text-align: left;
+      position: relative;
+    }
+    .decorative-element {
+      position: absolute;
+      top: 10%;
+      right: 10%;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,107,0,0.03) 0%, rgba(255,107,0,0) 70%);
+      z-index: 0;
+    }
+    
+    .decorative-element-2 {
+      position: absolute;
+      bottom: 15%;
+      left: 5%;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,107,0,0.03) 0%, rgba(255,107,0,0) 70%);
+      z-index: 0;
+    }
+    
+    .decorative-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 20%;
+      width: 1px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.02) 100%);
+      z-index: 0;
+    }
+    
+    @media (max-width: 768px) {
+      .elevator-pitch-container {
+        padding: 60px 25px;
+      }
+      
+      .logo {
+        font-size: 2rem;
+      }
+      
+      .tagline {
+        font-size: 1rem;
+        margin-bottom: 40px;
+      }
+      
+      .content-section p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+      }
+      
+      .accent-line {
+        left: -25px;
+      }
+      
+      .cta-button {
+        padding: 14px 30px;
+        font-size: 1rem;
+      }
+      
+      .decorative-element,
+      .decorative-element-2 {
+        opacity: 0.5;
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>

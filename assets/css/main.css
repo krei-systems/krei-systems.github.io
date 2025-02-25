@@ -1,0 +1,56 @@
+@media (min-width: 1280px) {
+    .xl\:text-9xl {
+      font-size: 8rem;
+      line-height: 1;
+    }
+  }
+  
+  /* assets */ 
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  font-family: ui-sans-serif,
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  "Noto Sans",
+  sans-serif,
+  Apple Color Emoji,
+  Segoe UI Emoji,
+  NotoColorEmoji,
+  Segoe UI Symbol,
+  Android Emoji,
+  EmojiSymbols;
+  .prose :where(h1):not(:where([class~="not-prose"] *)) {
+      color: white !important;
+  }
+  
+ /* menu navigation bar style */
+ .nav-link {
+  position: relative;
+   transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FD8228;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #FD8228;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}

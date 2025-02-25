@@ -1,0 +1,95 @@
+{{ define "main" }}
+{{ $style := resources.Get "css/style.css" }}
+
+<main class="relative" style="background-color: #100B06">
+   <!-- Hero Section -->
+   <link rel="stylesheet" href="{{ $style.Permalink }}">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">    
+    <section class="min-h-screen relative flex items-center justify-center">
+        <canvas id="cvs" class="absolute inset-0 w-full h-full" style="z-index: 1;"></canvas>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl uppercase tracking-wide text-white mb-6" style="font-size: 40px; font-weight: bold;">
+                {{ .Site.Params.Moto }}
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-200 max-w-2xl mx-auto" font>
+                {{ .Site.Params.Description }}
+            </p>
+        </div>
+    </section>
+   <!-- Limitless Industry section -->
+    <section class="py-16 md:py-24" style="background-color: #100B06">
+            <div class="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header Section -->
+                <div class="text-center mb-16">
+                    <h2 class="text-[#FD8128] text-3xl sm:text-4xl lg:text-5xl mb-6">
+                    LIMITLESS INDUSTRY APPLICATIONS
+                    </h2>
+                    <p class="text-white text-base sm:text-lg max-w-4xl mx-auto mb-8" style="font-size: 19px; ">
+                    The true power of KREI Vide lies in its flexibility and universal applicability. Whether in healthcare, finance, education, entertainment, manufacturing, space, defense, or any other field, Krei Vide seamlessly integrates with existing systems to enhance their functionalities.
+                    </p>
+                <div class="mt-8">
+                    <a href="/vide" 
+                    class="inline-flex items-center px-8 py-4 text-base font-medium text-white rounded-full bg-[#FD8128] hover:bg-[#e57321] transition-colors" style="font-size: 18px; font-weight: bold;">
+                        Learn more!
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cards Grid - With Column and Row Gaps -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Education Card -->
+                <div class="bg-[] p-8 flex flex-col items-center text-center">
+                    <div class="text-white mb-6">
+                        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-white text-xl font-bold">Education</h3>
+                    <div class="w-12 h-0.5 bg-[#FF0000] my-4"></div>
+                    <p class="text-white text-base sm:text-lg">KREI Vide enhances teaching practices, allowing educators to meet the individual needs of their students by delivering customized support and instruction based on learning styles, strengths and weaknesses.</p>
+                </div>
+
+                <!-- Finance Card -->
+                <div class="bg-[] p-8 flex flex-col items-center text-center">
+                    <div class="text-white mb-6">
+                        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-white text-xl font-bold">Finance</h3>
+                    <div class="w-12 h-0.5 bg-[#FF0000] my-4"></div>
+                    <p class="text-white text-base sm:text-lg">KREI Vide in finance revolutionizes how people engage with money. It assists the financial sector in streamlining and improving processes, from credit assessments to quantitative trading and managing financial risks.</p>
+                </div>
+
+                <!-- Healthcare Card -->
+                <div class="bg-[] p-8 flex flex-col items-center text-center">
+                    <div class="text-white mb-6">
+                        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-white text-xl font-bold">Healthcare</h3>
+                    <div class="w-12 h-0.5 bg-[#FF0000] my-4"></div>
+                    <p class="text-white text-base sm:text-lg">Providing more and better care to patients is possible with KREI Vide. It improves care outcomes, access to healthcare services, and patient experience, while increasing productivity and efficiency of care.</p>
+                </div>
+
+                <!-- Unmanned Aircraft Systems Card -->
+                <div class="bg-[] p-8 flex flex-col items-center text-center">
+                    <div class="text-white mb-6">
+                        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-white text-xl font-bold whitespace-nowrap">Unmanned Aircraft Systems</h3>
+                    <div class="w-12 h-0.5 bg-[#FF0000] my-4"></div>
+                    <p class="text-white text-base sm:text-lg">A UAS equipped with KREI Vide can lighten the operator's load, enhance situational awareness, and improve cooperation between the operator and the UAV. KREI Vide prevents unforeseen automation problems, and expands the operator's capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Scripts -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/particle.js"></script>
+</main>
+{{ end }}

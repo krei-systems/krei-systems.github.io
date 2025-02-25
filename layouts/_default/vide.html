@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ $style := resources.Get "css/main.css" }}
+<main class="vide-page-main w-full overflow-x-hidden m-0 p-0">
+  {{ .Content }}
+</main>
+{{ end }}
+
+{{ define "head_includes" }}
+  {{ partial "vide-styles.html" . }}
+{{ end }}
