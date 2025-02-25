@@ -6,9 +6,9 @@ layout: vide
 ---
 <div class="vide-wrapper">
   <!-- Hero Section -->
-  <section class="hero-section">
-    <h1 class="hero-title">KREI Vide</h1>
-    <p class="hero-subtitle">The Future of Technological Evolution</p>
+  <section class="hero-section1">
+    <h1 class="hero-title1">KREI Vide</h1>
+    <p class="hero-subtitle1">The Future of Technological Evolution</p>
   </section>
  <!-- New Vision Section -->
 <section class="vision-section">
