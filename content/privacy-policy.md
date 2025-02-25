@@ -8,7 +8,7 @@ layout: privacy-policy
  <div class="content-section">
       <div class="accent-line"></div>
 <p>      
-This Privacy Policy describes how Valmiz (collectively, “Valmiz,” “we,” “us,” or “our”) collects, uses, shares, and protects personal information. This Privacy Policy also tells you about your rights and choices with respect to your personal information, and how you can reach us to get answers to your questions.
+This Privacy Policy describes how Krei Systems (collectively, “Krei,” “we,” “us,” or “our”) collects, uses, shares, and protects personal information. This Privacy Policy also tells you about your rights and choices with respect to your personal information, and how you can reach us to get answers to your questions.
 Information We Collect
 
 We collect information about you in a variety of ways depending on how you interact with us and our websites and services, including:
@@ -110,7 +110,6 @@ Service Providers. We may share your information with service providers. Among o
 Other Disclosures with Your Consent. We may disclose your information to other third parties when we have your consent or direction to do so.
 
  
-
 How We Protect and Retain Information
 
 No method of transmission over the internet, or method of electronic storage, is fully secure. While we use reasonable efforts to protect your personal information from unauthorized access, use, or disclosure, we cannot guarantee the security of your personal information. In the event that we are required by law to inform you of a breach to your personal information we may notify you electronically, in writing, or by telephone, if permitted to do so by law.
