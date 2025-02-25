@@ -34,4 +34,4 @@ layout: elevator-pitch
         transcends existing technological boundaries and ushers in a <span class="highlight">new era of limitless possibilities</span>.
       </p>
     </div> 
-  </div>
+</div>

@@ -8,15 +8,16 @@
     <section class="min-h-screen relative flex items-center justify-center">
         <canvas id="cvs" class="absolute inset-0 w-full h-full" style="z-index: 1;"></canvas>
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="w-full flex justify-center items-center my-6">
-                <h1 class="uppercase text-white font-bold whitespace-nowrap px-4" style="font-size: 50px; letter-spacing: 0.05em;">
-                  EXPLORE. DISCOVER. CREATE.
-                </h1>
-              </div>                   
-            <p class="text-lg md:text-2xl text-gray-200 max-w-2xl mx-auto" font>
+            <div class="heading-container1">
+              <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight">
+                EXPLORE. DISCOVER. CREATE.
+              </h1>
+              <p class="text-lg sm:text-xl md:text-1xl lg:text-1xl text-gray-200  mx-auto">
                 {{ .Site.Params.Description }}
-            </p>
-        </div>
+              </p>
+            </div>
+          </div>
+          
     </section>
    <!-- Krei Intro-->
    <section class="hero-section">
@@ -42,45 +43,54 @@
             The true power of KREI Vide lies in its flexibility and universal applicability. Whether in healthcare, finance, education, entertainment, manufacturing, space, defense, or any other field, Krei Vide seamlessly integrates with existing systems to enhance their functionalities.
             </p>
         </div>
-        <!-- Cards Grid - With Column and Row Gaps -->
-        <div class="flex justify-center w-full">
-            <div class="grid grid-cols-3 gap-16 max-w-6xl">
-              <!-- Education Card -->
-              <div class="flex flex-col items-center text-center max-w-xs mx-auto">
-                <div class="text-white mb-6">
-                  <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+        <div class="container mx-auto px-4 py-12">
+            <!-- Three Column Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto">
+              
+              <!-- Education Column -->
+              <div class="flex flex-col items-center text-center p-4">
+                <div class="icon" style="color: white">
+                  <svg class="w-16 h-16" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
                   </svg>
                 </div>
-                <h3 class="text-white text-xl font-bold">Education</h3>
-                <div class="w-12 h-0.5 bg-[#FD8128] my-4"></div>
-                <p class="text-white text-base">KREI Vide enhances teaching practices, allowing educators to meet the individual needs of their students by delivering customized support and instruction based on learning styles, strengths and weaknesses.</p>
-            </div>
-              <!-- Finance Card -->
-              <div class="flex flex-col items-center text-center max-w-xs mx-auto">
-                <div class="text-white mb-6">
-                  <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+                <h3 class="text-xl font-bold" style="color: white">Education</h3>
+                <div class="orange-divider"></div>
+                <p class="text-base">
+                  KREI Vide enhances teaching practices, allowing educators to meet the individual needs of their students by delivering customized support and instruction based on learning styles, strengths and weaknesses.
+                </p>
+              </div>
+              
+              <!-- Finance Column -->
+              <div class="flex flex-col items-center text-center p-4">
+                <div class="icon" style="color: white">
+                  <svg class="w-16 h-16" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
                   </svg>
                 </div>
-                <h3 class="text-white text-xl font-bold">Finance</h3>
-                <div class="w-12 h-0.5 bg-[#FD8128] my-4"></div>
-                <p class="text-white text-base">KREI Vide in finance revolutionizes how people engage with money. It assists the financial sector in streamlining and improving processes, from credit assessments to quantitative trading and managing financial risks.</p>
-              </div>        
-              <!-- Healthcare Card -->
-              <div class="flex flex-col items-center text-center max-w-xs mx-auto">
-                <div class="text-white mb-6">
-                  <svg class="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
+                <h3 class="text-xl font-bold" style="color: white">Finance</h3>
+                <div class="orange-divider"></div>
+                <p class="text-base">
+                  KREI Vide in finance revolutionizes how people engage with money. It assists the financial sector in streamlining and improving processes, from credit assessments to quantitative trading and managing financial risks.
+                </p>
+              </div>
+              
+              <!-- Healthcare Column -->
+              <div class="flex flex-col items-center text-center p-4">
+                <div class="icon" style="color: white">
+                  <svg class="w-16 h-16" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
                   </svg>
                 </div>
-                <h3 class="text-white text-xl font-bold">Healthcare</h3>
-                <div class="w-12 h-0.5 bg-[#FD8128] my-4"></div>
-                <p class="text-white text-base">Providing more and better care to patients is possible with KREI Vide. It improves care outcomes, access to healthcare services, and patient experience, while increasing productivity and efficiency of care.</p>
+                <h3 class="text-xl font-bold" style="color: white">Healthcare</h3>
+                <div class="orange-divider"></div>
+                <p class="text-base">
+                  Providing more and better care to patients is possible with KREI Vide. It improves care outcomes, access to healthcare services, and patient experience, while increasing productivity and efficiency of care.
+                </p>
               </div>
+              
             </div>
           </div>
-    </div>
 </section>
     <!-- Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
