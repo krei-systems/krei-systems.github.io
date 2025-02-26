@@ -1,2 +1,2 @@
 # web-krei
-This repository is under development with regards to static website of KREI.
+Visit [krei.systems](krei.systems)
