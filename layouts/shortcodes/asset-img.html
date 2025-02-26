@@ -1,3 +1,2 @@
-{{ $image := resources.Get (printf "images/global/%s" (.Get "src")) }}
-<img src="{{ $image.RelPermalink }}" alt="{{ .Get "alt" }}" class="{{ .Get "class" }}">
-
+{{ $img := resources.Get (printf "images/global/%s" (.Get "src")) }}
+<img src="{{ $img.RelPermalink }}" class="{{ .Get "class" }}" alt="{{ .Get "alt" }}" />
