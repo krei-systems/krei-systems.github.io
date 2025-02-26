@@ -1,10 +1,11 @@
 <style>
-.privacy-policy-page-main * {
+  .privacy-policy-page-main * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-}
-.privacy-policy-page-main,
-.privacy-policy-wrapper {
+  }
+  
+  .privacy-policy-page-main,
+  .privacy-policy-wrapper {
     width: 100% !important;
     max-width: 100% !important;
     padding: 0 !important;
@@ -13,46 +14,96 @@
     color: #ffffff;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
-}
-
-.privacy-policy-page-main .container,
-.privacy-policy-page-main .mx-auto,
-.privacy-policy-page-main .px-4 {
+  }
+  
+  .privacy-policy-page-main .container,
+  .privacy-policy-page-main .mx-auto,
+  .privacy-policy-page-main .px-4 {
     max-width: 100% !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
-}
-.privacy-policy-page-main .prose,
-.privacy-policy-page-main .max-w-4xl,
-.privacy-policy-page-main .max-w-2xl {
+  }
+  
+  .privacy-policy-page-main .prose,
+  .privacy-policy-page-main .max-w-4xl,
+  .privacy-policy-page-main .max-w-2xl {
     max-width: 100% !important;
-}
+  }
+  
+  .privacy-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5% 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .content-section {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .content-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    text-align: justify;
+  }
+  
+  .content-section p:last-child {
+    margin-bottom: 0;
+  }
 
-.privacy-container {
-      max-width: 50%;
-      margin: 0 auto;
-      padding: 5% 5%;
-      position: relative;
-      overflow: hidden;
+  @media screen and (max-width: 1200px) {
+    .privacy-container {
+      width: 80%;
     }
-.content-section {
-      margin-bottom: 40px;
-      position: relative;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .privacy-container {
+      width: 85%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .privacy-container {
+      width: 90%;
+      padding: 8% 0;
     }
     
     .content-section p {
-      font-size: 1rem;
-      margin-bottom: 30px;
-      line-height: 1.8;
-      position: relative;
-      z-index: 1;
-      max-width: 900px;
-      text-align: justify;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .privacy-container {
+      width: 92%;
+      padding: 10% 0;
     }
     
-    .content-section p:last-child {
-      margin-bottom: 0;
+    .content-section {
+      margin-bottom: 30px;
     }
-</style>
+    
+    .content-section p {
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .privacy-container {
+      width: 94%;
+    }
+  }
+  </style>
