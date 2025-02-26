@@ -122,43 +122,71 @@ layout: vide
       </div>
     </div>
   </section>
-  <div class="industries-content">
-      <h2 class="industries-heading">Industries</h2>
-      <!-- Education -->
-      <div class="industry-row">
-        <h3 class="industry-title">Education</h3>
-        <p class="industry-text">With the rapidly accelerating integration of technology in our work, life, and classrooms, educators all over the world are re-evaluating the purpose of education in light of these outsized implications. We see the potential of <span class="krei-vide">Krei Vide</span> to accelerate the long overdue transformation of education systems towards inclusive learning that will prepare young people to thrive and shape a better future. At the same time, we see huge opportunities for teachers to use these technologies to enhance their own teaching practice and professional experience.
-        </p>
-      </div>
-      <!-- Healthcare -->
-      <div class="industry-row">
-        <h3 class="industry-title">Healthcare</h3>
-        <p class="industry-text"><span class="krei-vide">Krei Vide</span> has the potential to transform how healthcare is delivered, it can support improvements in care outcomes, patient experience and access to healthcare services. It can increase productivity and the efficiency of care delivery and allow healthcare systems to provide more and better care to more people. Krei Vide can help improve the experience of healthcare practitioners, enabling them to spend more time in direct patient care along with all financial bookkeeping while reducing burnout.
-        </p>
-      </div>  
-      <!-- Robotics -->
-      <div class="industry-row">
-        <h3 class="industry-title">Robotics</h3>
-        <p class="industry-text">Tapping on its keyword system to provide the base makes <span class="krei-vide">Krei Vide</span> even more powerful and now functions as a tool that will provide bi-directional communication that ensures the messages conveyed match the user's intentions. The keyword here is a task-specific tool. Krei Vide is here, to answer the question of importance, users will be allowed to openly express their prompts, queries, and commands that are then parsed by the machine and perform exactly as it was told to do without risking serious machine misinformation.
-        </p>
-      </div>   
-      <!-- Manufacturing -->
-      <div class="industry-row">
-        <h3 class="industry-title">Manufacturing</h3>
-        <p class="industry-text">The more <span class="krei-vide">Krei Vide</span> learns your data the more it can accurately build your knowledge base. Second, all incoming data right after the integration would be properly processed, sorted, stored, and prepared for seamless intelligent data retrieval. Third, likewise, with your business and the created knowledge base, both grow and expand.
-        </p>
-      </div>   
-      <!-- Unmanned Aircraft Systems -->
-      <div class="industry-row">
-        <h3 class="industry-title">Unmanned Aircraft Systems</h3>
-        <p class="industry-text">
-          A UAS with <span class="krei-vide">Krei Vide</span> lightens the operator's workload, improves situational awareness, and enhances UA cooperation. Krei Vide interacts with the pilot, providing more capabilities, improving human-UA cooperation, and reducing operator frustration. The goal is not to replace the pilot with Krei Vide but to provide a better understanding and awareness of the current situation and even in the event of the pilot's loss of control, the augmented automation is trustworthy to complete the task it was given.
-        </p>
-      </div>  
-      <!-- Defense -->
-      <div class="industry-row">
-        <h3 class="industry-title">Defense</h3>
-        <p class="industry-text"> Current approaches are susceptible on hallucinations, providing confident but unjustified responses, sometimes favoring the machine's own survival at the expense of humans. In a defense setting, where mistakes are unacceptable, using gated data for various processes is critical. Service members need systems that aid them, not ones that claim superiority in making life-and-death decisions.</p>
+  <!-- Industries Resources Section -->
+<section class="resources-section">
+  <div class="container">
+    <h2 class="section-heading">Industries powered by <span>Krei Vide</span></h2>   
+      <div class="resources-grid">
+        <!-- Education Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+          {{< asset-img src="8.png" alt="Education with Krei Vide" class="gallery-image" >}}
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Education</h3>
+            <p class="resource-description">With the rapidly accelerating integration of technology in our work, life, and classrooms, educators all over the world are re-evaluating the purpose of education in light of these outsized implications. We see the potential of <i>Krei Vide</i> to accelerate the long overdue transformation of education systems towards inclusive learning that will prepare young people to thrive and shape a better future. At the same time, we see huge opportunities for teachers to use these technologies to enhance their own teaching practice and professional experience.</p>
+          </div>
+        </div>     
+        <!-- Healthcare Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+          {{< asset-img src="10.png" alt="Healthcare with Krei Vide" class="gallery-image" >}}
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Healthcare</h3>
+            <p class="resource-description"><i>Krei Vide</i> has the potential to transform how healthcare is delivered, it can support improvements in care outcomes, patient experience and access to healthcare services. It can increase productivity and the efficiency of care delivery and allow healthcare systems to provide more and better care to more people. Krei Vide can help improve the experience of healthcare practitioners, enabling them to spend more time in direct patient care along with all financial bookkeeping while reducing burnout.</p>
+          </div>
+        </div>       
+        <!-- Robotics Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+          {{< asset-img src="11.png" alt="Robotics with Krei Vide" class="gallery-image" >}}
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Robotics</h3>
+            <p class="resource-description">Tapping on its keyword system to provide the base makes <i>Krei Vide</i> even more powerful and now functions as a tool that will provide bi-directional communication that ensures the messages conveyed match the user's intentions. The keyword here is a task-specific tool. <i>Krei Vide</i> is here, to answer the question of importance, users will be allowed to openly express their prompts, queries, and commands that are then parsed by the machine and perform exactly as it was told to do without risking serious machine misinformation.</p>
+          </div>
+        </div>      
+        <!-- Manufacturing Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+          {{< asset-img src="12.png" alt="Manufacturing with Krei Vide" class="gallery-image" >}}
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Manufacturing</h3>
+            <p class="resource-description">The more <i>Krei Vide</i> learns your data the more it can accurately build your knowledge base. Second, all incoming data right after the integration would be properly processed, sorted, stored, and prepared for seamless intelligent data retrieval. Third, likewise, with your business and the created knowledge base, both grow and expand.</p>
+          </div>
+        </div>      
+        <!-- UAS Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+          {{< asset-img src="13.png" alt="UAS with Krei Vide" class="gallery-image" >}}
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Unmanned Aircraft Systems</h3>
+            <p class="resource-description">A UAS with <i>Krei Vide</i> lightens the operator's workload, improves situational awareness, and enhances UA cooperation. <i>Krei Vide</i> interacts with the pilot, providing more capabilities, improving human-UA cooperation, and reducing operator frustration. The goal is not to replace the pilot with Krei Vide but to provide a better understanding and awareness of the current situation and even in the event of the pilot's loss of control, the augmented automation is trustworthy to complete the task it was given.</p>
+          </div>
+        </div>     
+        <!-- Defense Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+            {{< asset-img src="9.png" alt="Defense with Krei Vide" class="gallery-image" >}}
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Defense</h3>
+            <p class="resource-description">Current approaches are susceptible on hallucinations, providing confident but unjustified responses, sometimes favoring the machine's own survival at the expense of humans. In a defense setting, where mistakes are unacceptable, using gated data for various processes is critical. Service members need systems that aid them, not ones that claim superiority in making life-and-death decisions.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

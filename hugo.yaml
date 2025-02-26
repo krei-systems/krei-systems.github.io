@@ -86,13 +86,13 @@ menus:
   - name: Vide
     pageRef: /vide
     weight: 20
-  - name: Team
-    pageref: /team
-    weight: 30
   - identifier: Elevator Pitch
     name: Elevator Pitch
+    weight: 30
+    pageRef: "#elevator-pitch"
+  - name: Team
+    pageref: "#team-section-id"
     weight: 40
-    url: /elevator-pitch
   footer:
     - identifier: Home
       name: Home
@@ -102,6 +102,7 @@ menus:
       name: Privacy Policy
       url: /privacy-policy
       weight: 30
+
 markup:
   goldmark:
     renderer:
