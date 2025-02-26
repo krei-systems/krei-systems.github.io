@@ -1,2 +1,2 @@
 # Krei Systems Website
-Check out <krei.systems>
+Check out <https://krei.systems>
