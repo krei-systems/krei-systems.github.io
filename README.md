@@ -1,2 +1,2 @@
 # Krei Systems Website
-Visit [krei.systems](krei.systems)
+Check out <krei.systems>
