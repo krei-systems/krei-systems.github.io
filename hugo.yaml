@@ -86,13 +86,6 @@ menus:
   - name: Vide
     pageRef: /vide
     weight: 20
-  - identifier: Elevator Pitch
-    name: Elevator Pitch
-    weight: 30
-    pageRef: "#elevator-pitch"
-  - name: Team
-    pageref: "#team-section-id"
-    weight: 40
   footer:
     - identifier: Home
       name: Home

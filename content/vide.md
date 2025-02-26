@@ -7,7 +7,7 @@ layout: vide
 <div class="vide-wrapper">
   <!-- Hero Section -->
   <section class="hero-section1">
-    <h1 class="hero-title1">KREI Vide</h1>
+    <h1 class="hero-title1">Vide</h1>
     <p class="hero-subtitle1">The Future of Technological Evolution</p>
   </section>
  <!-- New Vision Section -->
@@ -30,7 +30,7 @@ layout: vide
           <path d="M12 6L16 8.5V13.5L12 16L8 13.5V8.5L12 6Z" fill="#F492C2"/>
         </svg>
       </div>
-      <p class="epocal-text"><span class="krei-vide">Krei Vide</span> is a blue ocean technology—a novel and transformative concept—that creates an entirely new market space, making competition irrelevant. Unlike other technologies that merely seek to replace what already exists, KREI Vide augments and supercharges the potential of current innovations, acting as a catalyst for unprecedented growth and efficiency.</p>
+      <p class="epocal-text"><span class="krei-vide">Vide</span> is a blue ocean technology—a novel and transformative concept—that creates an entirely new market space, making competition irrelevant. Unlike other technologies that merely seek to replace what already exists, Vide augments and supercharges the potential of current innovations, acting as a catalyst for unprecedented growth and efficiency.</p>
       </div>
     </div>
     </section>
@@ -51,11 +51,11 @@ layout: vide
   </div>
     <!-- Feature Section -->
     <section class="feature-section">
-      <h2 class="section-heading">Why Embrace KREI Vide?</h2>
+      <h2 class="section-heading">Why Embrace Vide?</h2>
       <div class="feature-grid">
         <div class="feature-card">
           <h3>Blue Ocean Technology</h3>
-          <p class="section-text">Krei Vide operates in a unique space with no direct competitors, offering untapped market potential.</p>
+          <p class="section-text">Vide operates in a unique space with no direct competitors, offering untapped market potential.</p>
         </div>
         <div class="feature-card">
           <h3>Transformative Impact</h3>
@@ -63,19 +63,19 @@ layout: vide
         </div>
         <div class="feature-card">
           <h3>Exceptional Capabilities</h3>
-          <p class="section-text">With high efficiency, incredible speed, powerful performance, and secured technology, KREI Vide delivers unprecedented results.</p>
+          <p class="section-text">With high efficiency, incredible speed, powerful performance, and secured technology, Vide delivers unprecedented results.</p>
         </div>
         <div class="feature-card">
           <h3>Scalability</h3>
-          <p class="section-text">Krei Vide is an adaptable platform that guarantees high scalability, accommodating the evolving needs of various sectors and user groups.</p>
+          <p class="section-text">Vide is an adaptable platform that guarantees high scalability, accommodating the evolving needs of various sectors and user groups.</p>
         </div>
         <div class="feature-card">
           <h3>Bespoke Solutions</h3>
-          <p class="section-text">Krei Vide customized approach ensures that each organization receives tailored solutions that enhance efficiency and accuracy.</p>
+          <p class="section-text">Vide customized approach ensures that each organization receives tailored solutions that enhance efficiency and accuracy.</p>
         </div>
         <div class="feature-card">
           <h3>Human Arbiters</h3>
-          <p class="section-text">To preserve morals, ethics, and values, humans are the final decision makers of KREI Vide operations.</p>
+          <p class="section-text">To preserve morals, ethics, and values, humans are the final decision makers of Vide operations.</p>
         </div>
       </div>
     </section>
@@ -91,7 +91,7 @@ layout: vide
             <path d="M8 12L11 15L16 9" stroke="#FD8128" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-        <p class="differentiators-text"><span class="krei-vide">Krei Vide</span> is a distributed system that operates across multiple interconnected modules to optimize performance and address challenges such as network traffic and low latency requirements, this method provides advantages like enhanced scalability, improved fault tolerance, and efficient resource utilization.​</p>
+        <p class="differentiators-text"><span class="krei-vide">Vide</span> is a distributed system that operates across multiple interconnected modules to optimize performance and address challenges such as network traffic and low latency requirements, this method provides advantages like enhanced scalability, improved fault tolerance, and efficient resource utilization.​</p>
       </div>
       <div class="differentiators-content">
         <div class="differentiators-icon">
@@ -118,23 +118,23 @@ layout: vide
             <path d="M8 12L11 15L16 9" stroke="#FD8128" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-        <p class="differentiators-text"><span class="krei-vide">Krei Vide</span> is capable of identifying and leveraging context extensively. It searches within a confinement of data, looking for related information without being explicitly told where to look. It uses its unique information augmentation system from your own data and external sources. It is a platform that enables consumers to extract, organize, and manage that information. It was designed to solve medium to hard problems KREI Vide in real-world applications is expected to lead to new innovations in many industries.​</p>
+        <p class="differentiators-text"><span class="krei-vide">Vide</span> is capable of identifying and leveraging context extensively. It searches within a confinement of data, looking for related information without being explicitly told where to look. It uses its unique information augmentation system from your own data and external sources. It is a platform that enables consumers to extract, organize, and manage that information. It was designed to solve medium to hard problems Vide in real-world applications is expected to lead to new innovations in many industries.​</p>
       </div>
     </div>
   </section>
   <!-- Industries Resources Section -->
 <section class="resources-section">
   <div class="container">
-    <h2 class="section-heading">Industries powered by <span>Krei Vide</span></h2>   
+    <h2 class="section-heading">Industries powered by <span>Vide</span></h2>   
       <div class="resources-grid">
         <!-- Education Resource -->
         <div class="resource-card">
           <div class="resource-image">
-          {{< asset-img src="8.png" alt="Education with Krei Vide" class="gallery-image" >}}
+          {{< asset-img src="8.png" alt="Education with Vide" class="gallery-image" >}}
           </div>
           <div class="resource-content">
             <h3 class="resource-title">Education</h3>
-            <p class="resource-description">With the rapidly accelerating integration of technology in our work, life, and classrooms, educators all over the world are re-evaluating the purpose of education in light of these outsized implications. We see the potential of Krei Vide to accelerate the long overdue transformation of education systems towards inclusive learning that will prepare young people to thrive and shape a better future. At the same time, we see huge opportunities for teachers to use these technologies to enhance their own teaching practice and professional experience.</p>
+            <p class="resource-description">With the rapidly accelerating integration of technology in our work, life, and classrooms, educators all over the world are re-evaluating the purpose of education in light of these outsized implications. We see the potential of Vide to accelerate the long overdue transformation of education systems towards inclusive learning that will prepare young people to thrive and shape a better future. At the same time, we see huge opportunities for teachers to use these technologies to enhance their own teaching practice and professional experience.</p>
           </div>
         </div>     
         <!-- Healthcare Resource -->
@@ -144,7 +144,7 @@ layout: vide
           </div>
           <div class="resource-content">
             <h3 class="resource-title">Healthcare</h3>
-            <p class="resource-description">Krei Vide has the potential to transform how healthcare is delivered, it can support improvements in care outcomes, patient experience and access to healthcare services. It can increase productivity and the efficiency of care delivery and allow healthcare systems to provide more and better care to more people. Krei Vide can help improve the experience of healthcare practitioners, enabling them to spend more time in direct patient care along with all financial bookkeeping while reducing burnout.</p>
+            <p class="resource-description">Vide has the potential to transform how healthcare is delivered, it can support improvements in care outcomes, patient experience and access to healthcare services. It can increase productivity and the efficiency of care delivery and allow healthcare systems to provide more and better care to more people. Vide can help improve the experience of healthcare practitioners, enabling them to spend more time in direct patient care along with all financial bookkeeping while reducing burnout.</p>
           </div>
         </div>       
         <!-- Robotics Resource -->
@@ -154,7 +154,7 @@ layout: vide
           </div>
           <div class="resource-content">
             <h3 class="resource-title">Robotics</h3>
-            <p class="resource-description">Tapping on its keyword system to provide the base makes Krei Vide even more powerful and now functions as a tool that will provide bi-directional communication that ensures the messages conveyed match the user's intentions. The keyword here is a task-specific tool. Krei Vide is here, to answer the question of importance, users will be allowed to openly express their prompts, queries, and commands that are then parsed by the machine and perform exactly as it was told to do without risking serious machine misinformation.</p>
+            <p class="resource-description">Tapping on its keyword system to provide the base makes Vide even more powerful and now functions as a tool that will provide bi-directional communication that ensures the messages conveyed match the user's intentions. The keyword here is a task-specific tool. Vide is here, to answer the question of importance, users will be allowed to openly express their prompts, queries, and commands that are then parsed by the machine and perform exactly as it was told to do without risking serious machine misinformation.</p>
           </div>
         </div>      
         <!-- Manufacturing Resource -->
@@ -164,7 +164,7 @@ layout: vide
           </div>
           <div class="resource-content">
             <h3 class="resource-title">Manufacturing</h3>
-            <p class="resource-description">The more Krei Vide learns your data the more it can accurately build your knowledge base. Second, all incoming data right after the integration would be properly processed, sorted, stored, and prepared for seamless intelligent data retrieval. Third, likewise, with your business and the created knowledge base, both grow and expand.</p>
+            <p class="resource-description">The more Vide learns your data the more it can accurately build your knowledge base. Second, all incoming data right after the integration would be properly processed, sorted, stored, and prepared for seamless intelligent data retrieval. Third, likewise, with your business and the created knowledge base, both grow and expand.</p>
           </div>
         </div>      
         <!-- UAS Resource -->
@@ -174,7 +174,7 @@ layout: vide
           </div>
           <div class="resource-content">
             <h3 class="resource-title">Unmanned Aircraft Systems</h3>
-            <p class="resource-description">A UAS with Krei Vide lightens the operator's workload, improves situational awareness, and enhances UA cooperation. Krei Vide interacts with the pilot, providing more capabilities, improving human-UA cooperation, and reducing operator frustration. The goal is not to replace the pilot with Krei Vide but to provide a better understanding and awareness of the current situation and even in the event of the pilot's loss of control, the augmented automation is trustworthy to complete the task it was given.</p>
+            <p class="resource-description">A UAS with Vide lightens the operator's workload, improves situational awareness, and enhances UA cooperation. Vide interacts with the pilot, providing more capabilities, improving human-UA cooperation, and reducing operator frustration. The goal is not to replace the pilot with Vide but to provide a better understanding and awareness of the current situation and even in the event of the pilot's loss of control, the augmented automation is trustworthy to complete the task it was given.</p>
           </div>
         </div>     
         <!-- Defense Resource -->
