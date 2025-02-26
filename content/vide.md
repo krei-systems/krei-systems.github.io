@@ -55,7 +55,7 @@ layout: vide
       <div class="feature-grid">
         <div class="feature-card">
           <h3>Blue Ocean Technology</h3>
-          <p class="section-text">Krei Vide operates in a unique space with no direct competitors, offering untapped market potential.</p>
+          <p class="section-text"><li>Krei Vide</li> operates in a unique space with no direct competitors, offering untapped market potential.</p>
         </div>
         <div class="feature-card">
           <h3>Transformative Impact</h3>
@@ -63,19 +63,19 @@ layout: vide
         </div>
         <div class="feature-card">
           <h3>Exceptional Capabilities</h3>
-          <p class="section-text">With high efficiency, incredible speed, powerful performance, and secured technology, KREI Vide delivers unprecedented results.</p>
+          <p class="section-text">With high efficiency, incredible speed, powerful performance, and secured technology, <li>KREI Vide</li> delivers unprecedented results.</p>
         </div>
         <div class="feature-card">
           <h3>Scalability</h3>
-          <p class="section-text">Krei Vide is an adaptable platform that guarantees high scalability, accommodating the evolving needs of various sectors and user groups.</p>
+          <p class="section-text"><li>Krei Vide</li> is an adaptable platform that guarantees high scalability, accommodating the evolving needs of various sectors and user groups.</p>
         </div>
         <div class="feature-card">
           <h3>Bespoke Solutions</h3>
-          <p class="section-text">Krei Vide customized approach ensures that each organization receives tailored solutions that enhance efficiency and accuracy.</p>
+          <p class="section-text"><li>Krei Vide</li> customized approach ensures that each organization receives tailored solutions that enhance efficiency and accuracy.</p>
         </div>
         <div class="feature-card">
           <h3>Human Arbiters</h3>
-          <p class="section-text">To preserve morals, ethics, and values, humans are the final decision makers of KREI Vide operations.</p>
+          <p class="section-text">To preserve morals, ethics, and values, humans are the final decision makers of <li>KREI Vide</li> operations.</p>
         </div>
       </div>
     </section>
