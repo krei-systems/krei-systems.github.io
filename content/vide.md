@@ -55,7 +55,7 @@ layout: vide
       <div class="feature-grid">
         <div class="feature-card">
           <h3>Blue Ocean Technology</h3>
-          <p class="section-text"><li>Krei Vide</li> operates in a unique space with no direct competitors, offering untapped market potential.</p>
+          <p class="section-text">Krei Vide operates in a unique space with no direct competitors, offering untapped market potential.</p>
         </div>
         <div class="feature-card">
           <h3>Transformative Impact</h3>
@@ -63,19 +63,19 @@ layout: vide
         </div>
         <div class="feature-card">
           <h3>Exceptional Capabilities</h3>
-          <p class="section-text">With high efficiency, incredible speed, powerful performance, and secured technology, <li>KREI Vide</li> delivers unprecedented results.</p>
+          <p class="section-text">With high efficiency, incredible speed, powerful performance, and secured technology, KREI Vide delivers unprecedented results.</p>
         </div>
         <div class="feature-card">
           <h3>Scalability</h3>
-          <p class="section-text"><li>Krei Vide</li> is an adaptable platform that guarantees high scalability, accommodating the evolving needs of various sectors and user groups.</p>
+          <p class="section-text">Krei Vide is an adaptable platform that guarantees high scalability, accommodating the evolving needs of various sectors and user groups.</p>
         </div>
         <div class="feature-card">
           <h3>Bespoke Solutions</h3>
-          <p class="section-text"><li>Krei Vide</li> customized approach ensures that each organization receives tailored solutions that enhance efficiency and accuracy.</p>
+          <p class="section-text">Krei Vide customized approach ensures that each organization receives tailored solutions that enhance efficiency and accuracy.</p>
         </div>
         <div class="feature-card">
           <h3>Human Arbiters</h3>
-          <p class="section-text">To preserve morals, ethics, and values, humans are the final decision makers of <li>KREI Vide</li> operations.</p>
+          <p class="section-text">To preserve morals, ethics, and values, humans are the final decision makers of KREI Vide operations.</p>
         </div>
       </div>
     </section>
@@ -134,7 +134,7 @@ layout: vide
           </div>
           <div class="resource-content">
             <h3 class="resource-title">Education</h3>
-            <p class="resource-description">With the rapidly accelerating integration of technology in our work, life, and classrooms, educators all over the world are re-evaluating the purpose of education in light of these outsized implications. We see the potential of <i>Krei Vide</i> to accelerate the long overdue transformation of education systems towards inclusive learning that will prepare young people to thrive and shape a better future. At the same time, we see huge opportunities for teachers to use these technologies to enhance their own teaching practice and professional experience.</p>
+            <p class="resource-description">With the rapidly accelerating integration of technology in our work, life, and classrooms, educators all over the world are re-evaluating the purpose of education in light of these outsized implications. We see the potential of Krei Vide to accelerate the long overdue transformation of education systems towards inclusive learning that will prepare young people to thrive and shape a better future. At the same time, we see huge opportunities for teachers to use these technologies to enhance their own teaching practice and professional experience.</p>
           </div>
         </div>     
         <!-- Healthcare Resource -->
@@ -144,7 +144,7 @@ layout: vide
           </div>
           <div class="resource-content">
             <h3 class="resource-title">Healthcare</h3>
-            <p class="resource-description"><i>Krei Vide</i> has the potential to transform how healthcare is delivered, it can support improvements in care outcomes, patient experience and access to healthcare services. It can increase productivity and the efficiency of care delivery and allow healthcare systems to provide more and better care to more people. Krei Vide can help improve the experience of healthcare practitioners, enabling them to spend more time in direct patient care along with all financial bookkeeping while reducing burnout.</p>
+            <p class="resource-description">Krei Vide has the potential to transform how healthcare is delivered, it can support improvements in care outcomes, patient experience and access to healthcare services. It can increase productivity and the efficiency of care delivery and allow healthcare systems to provide more and better care to more people. Krei Vide can help improve the experience of healthcare practitioners, enabling them to spend more time in direct patient care along with all financial bookkeeping while reducing burnout.</p>
           </div>
         </div>       
         <!-- Robotics Resource -->
@@ -154,7 +154,7 @@ layout: vide
           </div>
           <div class="resource-content">
             <h3 class="resource-title">Robotics</h3>
-            <p class="resource-description">Tapping on its keyword system to provide the base makes <i>Krei Vide</i> even more powerful and now functions as a tool that will provide bi-directional communication that ensures the messages conveyed match the user's intentions. The keyword here is a task-specific tool. <i>Krei Vide</i> is here, to answer the question of importance, users will be allowed to openly express their prompts, queries, and commands that are then parsed by the machine and perform exactly as it was told to do without risking serious machine misinformation.</p>
+            <p class="resource-description">Tapping on its keyword system to provide the base makes Krei Vide even more powerful and now functions as a tool that will provide bi-directional communication that ensures the messages conveyed match the user's intentions. The keyword here is a task-specific tool. Krei Vide is here, to answer the question of importance, users will be allowed to openly express their prompts, queries, and commands that are then parsed by the machine and perform exactly as it was told to do without risking serious machine misinformation.</p>
           </div>
         </div>      
         <!-- Manufacturing Resource -->
@@ -164,7 +164,7 @@ layout: vide
           </div>
           <div class="resource-content">
             <h3 class="resource-title">Manufacturing</h3>
-            <p class="resource-description">The more <i>Krei Vide</i> learns your data the more it can accurately build your knowledge base. Second, all incoming data right after the integration would be properly processed, sorted, stored, and prepared for seamless intelligent data retrieval. Third, likewise, with your business and the created knowledge base, both grow and expand.</p>
+            <p class="resource-description">The more Krei Vide learns your data the more it can accurately build your knowledge base. Second, all incoming data right after the integration would be properly processed, sorted, stored, and prepared for seamless intelligent data retrieval. Third, likewise, with your business and the created knowledge base, both grow and expand.</p>
           </div>
         </div>      
         <!-- UAS Resource -->
@@ -174,7 +174,7 @@ layout: vide
           </div>
           <div class="resource-content">
             <h3 class="resource-title">Unmanned Aircraft Systems</h3>
-            <p class="resource-description">A UAS with <i>Krei Vide</i> lightens the operator's workload, improves situational awareness, and enhances UA cooperation. <i>Krei Vide</i> interacts with the pilot, providing more capabilities, improving human-UA cooperation, and reducing operator frustration. The goal is not to replace the pilot with Krei Vide but to provide a better understanding and awareness of the current situation and even in the event of the pilot's loss of control, the augmented automation is trustworthy to complete the task it was given.</p>
+            <p class="resource-description">A UAS with Krei Vide lightens the operator's workload, improves situational awareness, and enhances UA cooperation. Krei Vide interacts with the pilot, providing more capabilities, improving human-UA cooperation, and reducing operator frustration. The goal is not to replace the pilot with Krei Vide but to provide a better understanding and awareness of the current situation and even in the event of the pilot's loss of control, the augmented automation is trustworthy to complete the task it was given.</p>
           </div>
         </div>     
         <!-- Defense Resource -->
