@@ -4,12 +4,6 @@ draft: false
 language: en
 layout: team
 ---
----
-title: "Team"
-draft: false
-language: en
-layout: team
----
 <section id="team-section-id">
   <div class="container">
     <section class="team-section">
