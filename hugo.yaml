@@ -83,18 +83,14 @@ menus:
   - name: Home
     pageRef: /
     weight: 10
-  - name: Vide
-    pageRef: /vide
+  - name: Team
+    pageRef: /team
     weight: 20
   footer:
-    - identifier: Home
-      name: Home
-      url: /
-      weight: 10
     - identifier: Privacy Policy
       name: Privacy Policy
       url: /privacy-policy
-      weight: 30
+      weight: 10
 
 markup:
   goldmark:

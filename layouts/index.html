@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ $style := resources.Get "css/style.css" }}
 
+
 <main class="relative" style="background-color: #100B06">
    <!-- Hero Section -->
    <link rel="stylesheet" href="{{ $style.Permalink }}">
@@ -17,29 +18,27 @@
               </p>
             </div>
           </div>
-          
     </section>
    <!-- Krei Intro-->
    <section class="hero-section">
-    <div class="hero-container">
+    <div class="hero-container" style="padding-bottom: 20px;">
       <h1 class="hero-title">The Future of Technological Evolution</h1>
       <h2 class="brand-name">Vide</h2>
       <p class="hero-description">
         Welcome to Vide, an unparalleled technological platform poised to revolutionize the digital landscape. Vide represents not just an incremental improvement but a seismic shift in how we perceive and interact with technology.
       </p>
-      <a href="/vide" class="cta-button">See More Details</a>
+      <a href="#vide" class="cta-button">See More Details</a>
     </div>
   </section>
-    </sections>
    <!-- Limitless Industry section -->
    <section class="py-16 md:py-24" style="background-color: #100B06; padding-bottom: 20px;">
     <div class="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Header Section -->
         <div class="text-center mb-16">
-            <h2 class="text-[#FD8128] text-3xl sm:text-4xl lg:text-5xl mb-6">
+            <h2 class="text-[#FD8128] text-3xl sm:text-4xl lg:text-5xl mb-6" style="font-size: 3rem; font-weight: 500;">
             LIMITLESS INDUSTRY APPLICATIONS
             </h2>
-            <p class="text-white text-base sm:text-lg max-w-4xl mx-auto mb-8" style="font-size: 19px; ">
+            <p class="text-white text-base sm:text-lg max-w-4xl mx-auto mb-8" style="font-size: 19px; line-height: 1.6;">
             The true power of Vide lies in its flexibility and universal applicability. Whether in healthcare, finance, education, entertainment, manufacturing, space, defense, or any other field, Vide seamlessly integrates with existing systems to enhance their functionalities.
             </p>
         </div>
@@ -88,81 +87,217 @@
             </div>
           </div>
 </section>
-<section id="elevator-pitch" class="elevator-pitch-section">
-  <div class="elevator-pitch-container">
-    <div class="title-container">
-      <h1 class="pitch-title">ELEVATOR PITCH</h1>
-      <div class="title-divider"></div>
+<div class="vide-wrapper">
+  <!-- Image Gallery Section -->
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      {{ $img := resources.Get "images/global/4.png" }}
+      <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
     </div>
-    <div class="content-section">
-      <div class="content-block">
-        <p>
-          Wouldn't it be great to use your data—personal or business—stored inside your premises, as your private knowledge base? Wouldn't it
-          be great to be able to identify insights and locate hidden information using a <span class="highlight">state-of-the-art mapping system</span>? Wouldn't it be great to
-          have the ability to upgrade this system without incurring downtimes?
-        </p>  
-      </div>
-      <div class="content-block">
-        <p>
-          <span class="product-name">Vide</span> is capable of identifying and leveraging context extensively. It searches within a confinement of data, looking for related
-          information without being explicitly told where to look. It uses its unique information augmentation system from your own data and
-          external sources. <span class="product-name">Vide</span> in real-world applications is expected to lead to <span class="highlight">new innovations</span> in many industries.
-        </p>   
-      </div>
-      <div class="content-block">
-        <p>
-          <span class="product-name">Vide</span> is more than just an innovation; it is a canvas for human imagination. <span class="product-name">Vide</span> empowers innovators, creators, and
-          visionaries to <span class="highlight">push the boundaries</span> of what is possible. The versatility and transformative potential of KREI, Inc. ensure that its
-          applications are only limited by creativity and ambition.
-        </p>    
-      </div>
-      <div class="content-block">
-        <p>
-          As forward-thinking leaders, you are presented with an opportunity to be at the forefront of groundbreaking innovation that
-          transcends existing technological boundaries and ushers in a <span class="highlight">new era of limitless possibilities</span>.
-        </p>
-      </div>
-    </div> 
+    <div class="gallery-item">
+      {{ $img := resources.Get "images/global/3.png" }}
+      <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
+    </div>
+    <div class="gallery-item">
+      {{ $img := resources.Get "images/global/2.png" }}
+      <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
+    </div>
+    <div class="gallery-item">
+      {{ $img := resources.Get "images/global/1.png" }}
+      <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
+    </div>
   </div>
-</section>
-<section id="team-section-id">
- <div class="container">
-  <section class="team-section">
-    <div class="section-header">
-      <h2 class="section-title">Core Team</h2>
-    </div>   
-    <div class="team-grid1">
-        <div class="team-member">
-          {{ $img := resources.Get "images/global/6.png" }}
-          <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
-          <div class="member-info">
-            <h3 class="member-name">Rommel Martínez</h3>
-            <span class="member-role">CEO, co-founder</span>
-            <p class="member-bio">Rom is passionate about building systems that are of great utility to people, to facilitate in broadening what humans can discover, whether this concerns life on Earth now, or elsewhere. Rom’s lifelong goal is to gain a better understanding of knowledge, reasoning, and intelligence. He believes that in order to gain a better grasp of the cosmos, we need to gain deeper comprehension of how our minds work, since the universe that we know is a compounded product of how we perceive it plus other factors that we don’t know, yet. Rom has decades of experience in software engineering, system administration, and programming language theory. He has previously worked with scientists from NASA Langley Research Center, École Nationale Supérieure des Télécommunications, Carnegie Mellon University, and Massachusetts Institute of Technology,</p>
+    <!-- Feature Section -->
+    <section id="vide" class="feature-section">
+      <h2 class="section-heading">WHY EMBRACE<i> VIDE</i> ?</h2>
+      <section class="epocal-section">
+        <div class="epocal-container">
+            <p class="text-white text-base sm:text-lg max-w-4xl mx-auto mb-8" style="margin-top: -80px;"><span class="krei-vide">Vide</span> is a blue ocean technology—a novel and transformative concept—that creates an entirely new market space, making competition irrelevant. Unlike other technologies that merely seek to replace what already exists, Vide augments and supercharges the potential of current innovations, acting as a catalyst for unprecedented growth and efficiency.</p>
+            </div>
+          </div>
+        </section>
+      <div class="feature-grid">
+        <div class="feature-card" style="color: white;">
+          <h3>Blue Ocean Technology</h3>
+          <p class="section-text"><i>Vide</i> operates in a unique space with no direct competitors, offering untapped market potential.</p>
+        </div>
+        <div class="feature-card" style="color: white;">
+          <h3>Transformative Impact</h3>
+          <p class="section-text">The ability to augment and enhance existing technologies ensures widespread adoption and integration across diverse industries.</p>
+        </div>
+        <div class="feature-card" style="color: white;">
+          <h3>Exceptional Capabilities</h3>
+          <p class="section-text">With high efficiency, incredible speed, powerful performance, and secured technology, <i>Vide</i> delivers unprecedented results.</p>
+        </div>
+        <div class="feature-card" style="color: white;">
+          <h3>Scalability</h3>
+          <p class="section-text"><i>Vide</i> is an adaptable platform that guarantees high scalability, accommodating the evolving needs of various sectors and user groups.</p>
+        </div>
+        <div class="feature-card" style="color: white;">
+          <h3>Bespoke Solutions</h3>
+          <p class="section-text"><i>Vide</i> customized approach ensures that each organization receives tailored solutions that enhance efficiency and accuracy.</p>
+        </div>
+        <div class="feature-card" style="color: white;">
+          <h3>Human Arbiters</h3>
+          <p class="section-text">To preserve morals, ethics, and values, humans are the final decision makers of <i>Vide</i> operations.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!-- Key Differentiators Section -->
+  <section class="differentiators-section">
+    <div class="differentiators-container">
+      <h2 class="differentiators-heading">Distributed Intersymbolic System</h2>
+      <div class="differentiators-content">
+        <div class="differentiators-icon">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="#FD8128" stroke-width="2"/>
+            <path d="M8 12L11 15L16 9" stroke="#FD8128" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="differentiators-text"><span class="krei-vide">Vide</span> is a distributed system that operates across multiple interconnected modules to optimize performance and address challenges such as network traffic and low latency requirements, this method provides advantages like enhanced scalability, improved fault tolerance, and efficient resource utilization.​</p>
+      </div>
+      <div class="differentiators-content">
+        <div class="differentiators-icon">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="#FD8128" stroke-width="2"/>
+            <path d="M8 12L11 15L16 9" stroke="#FD8128" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="differentiators-text">Intersymbolic system bridges the gap between <span class="krei-vide">symbolic</span> and <span class="krei-vide">sub-symbolic</span> , With symbolic, the basic premise is the presence of inherent meaning of things. It uses ontologies to draw relationships between objects to discover new pathways for reasoning and learning. Subsymbolic, on the other hand, uses (un)supervised machine and reinforcement learning to draw conclusions.​</p>
+      </div>
+      <div class="differentiators-content">
+        <div class="differentiators-icon">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="#FD8128" stroke-width="2"/>
+            <path d="M8 12L11 15L16 9" stroke="#FD8128" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="differentiators-text">Others utilize machine learning algorithms to identify patterns in data and create new content such as new images, text, music, and more. It’s trained on large amounts of data to learn patterns and relationships which allows it to generate new content that’s similar to the training data. It can be use in applications like image generation, text generation, music composition, and video synthesis.​</p>
+      </div>
+      <div class="differentiators-content">
+        <div class="differentiators-icon">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="#FD8128" stroke-width="2"/>
+            <path d="M8 12L11 15L16 9" stroke="#FD8128" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="differentiators-text"><span class="krei-vide">Vide</span> is capable of identifying and leveraging context extensively. It searches within a confinement of data, looking for related information without being explicitly told where to look. It uses its unique information augmentation system from your own data and external sources. It is a platform that enables consumers to extract, organize, and manage that information. It was designed to solve medium to hard problems Vide in real-world applications is expected to lead to new innovations in many industries.​</p>
+      </div>
+    </div>
+  </section>
+  <!-- Industries Resources Section -->
+<section class="resources-section" style="padding-bottom: 100px;">
+  <div class="container">
+    <h2 class="section-heading1">Industries powered by <span><i>Vide</i></span></h2>   
+      <div class="resources-grid">
+        <!-- Education Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+            {{ $img := resources.Get "images/global/8.png" }}
+            <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Education</h3>
+            <p class="resource-description">With the rapidly accelerating integration of technology in our work, life, and classrooms, educators all over the world are re-evaluating the purpose of education in light of these outsized implications. We see the potential of Vide to accelerate the long overdue transformation of education systems towards inclusive learning that will prepare young people to thrive and shape a better future. At the same time, we see huge opportunities for teachers to use these technologies to enhance their own teaching practice and professional experience.</p>
+          </div>
+        </div>     
+        <!-- Healthcare Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+            {{ $img := resources.Get "images/global/10.png" }}
+            <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Healthcare</h3>
+            <p class="resource-description">Vide has the potential to transform how healthcare is delivered, it can support improvements in care outcomes, patient experience and access to healthcare services. It can increase productivity and the efficiency of care delivery and allow healthcare systems to provide more and better care to more people. Vide can help improve the experience of healthcare practitioners, enabling them to spend more time in direct patient care along with all financial bookkeeping while reducing burnout.</p>
+          </div>
+        </div>       
+        <!-- Robotics Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+            {{ $img := resources.Get "images/global/11.png" }}
+            <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Robotics</h3>
+            <p class="resource-description">Tapping on its keyword system to provide the base makes Vide even more powerful and now functions as a tool that will provide bi-directional communication that ensures the messages conveyed match the user's intentions. The keyword here is a task-specific tool. Vide is here, to answer the question of importance, users will be allowed to openly express their prompts, queries, and commands that are then parsed by the machine and perform exactly as it was told to do without risking serious machine misinformation.</p>
           </div>
         </div>      
-      <div class="team-member">
-        {{ $img := resources.Get "images/global/7.png" }}
-        <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
-        <div class="member-info">
-          <h3 class="member-name">Titus Manuel</h3>
-          <span class="member-role">COO, co-founder</span>
-          <p class="member-bio">Carlos C. Manuel, fondly known as Titus Manuel, a seasoned leader and visionary in the realm of Information Technology and Human Resources Development. With over four decades of dedicated expertise, his career embodies a rich tapestry of accomplishments. He is a current and Three-time President of the Philippine Computer Society (PCS), the pioneering association of IT Professionals in the Philippines. Founding Chairman of the National Association of Data Protection Officers of the Philippines (NADPOP), spearheading the nation's commitment to data protection and security. President of the Information Systems Security Society of the Philippines (ISSSP), driving advancementsin cybersecurity. President of Socius Business Development, fostering organizational growth and innovation. Registered Data Privacy and Digital Transformation Trainer for TÜV Rheinland Philippines, bridging local and international markets with cutting-edge knowledge.</p>
-        </div>
-      </div>      
-      <div class="team-member">
-        {{ $img := resources.Get "images/global/5.png" }}
-        <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
-        <div class="member-info">
-          <h3 class="member-name">Adrian Villareal</h3>
-          <span class="member-role">Software Engineer</span>
-          <p class="member-bio">Adi holds a Bachelor’s degree in Computer Science, specializing in Data Science from Adamson University in the Philippines. He is a Software Engineer at Krei Systems. After completing his college years, he decided to switch to the vast field of Artificial Intelligence. With a passion for innovation, Adi is focusing into a diverse skill set such as system administration, web development and Lisp programming—the second-oldest high-level programming language still in use after Fortran. He believes that the true mark of greatness is not only found in the achievement or accolades one gathers, but also in how they manage the responsibilities that come with that success.​</p>
+        <!-- Manufacturing Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+            {{ $img := resources.Get "images/global/12.png" }}
+            <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Manufacturing</h3>
+            <p class="resource-description">The more Vide learns your data the more it can accurately build your knowledge base. Second, all incoming data right after the integration would be properly processed, sorted, stored, and prepared for seamless intelligent data retrieval. Third, likewise, with your business and the created knowledge base, both grow and expand.</p>
+          </div>
+        </div>      
+        <!-- UAS Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+            {{ $img := resources.Get "images/global/13.png" }}
+            <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Unmanned Aircraft Systems</h3>
+            <p class="resource-description">A UAS with Vide lightens the operator's workload, improves situational awareness, and enhances UA cooperation. Vide interacts with the pilot, providing more capabilities, improving human-UA cooperation, and reducing operator frustration. The goal is not to replace the pilot with Vide but to provide a better understanding and awareness of the current situation and even in the event of the pilot's loss of control, the augmented automation is trustworthy to complete the task it was given.</p>
+          </div>
+        </div>     
+        <!-- Defense Resource -->
+        <div class="resource-card">
+          <div class="resource-image">
+            {{ $img := resources.Get "images/global/9.png" }}
+            <img src="{{ $img.RelPermalink }}" class="gallery-image" alt="KREI Vide Technology">
+          </div>
+          <div class="resource-content">
+            <h3 class="resource-title">Defense</h3>
+            <p class="resource-description">Current approaches are susceptible on hallucinations, providing confident but unjustified responses, sometimes favoring the machine's own survival at the expense of humans. In a defense setting, where mistakes are unacceptable, using gated data for various processes is critical. Service members need systems that aid them, not ones that claim superiority in making life-and-death decisions.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <section id="elevator-pitch" class="elevator-pitch-section">
+    <div class="elevator-pitch-container">
+      <div class="title-container">
+        <h1 class="pitch-title">ELEVATOR PITCH</h1>
+        <div class="title-divider"></div>
+      </div>
+      <div class="content-section">
+        <div class="content-block">
+          <p>
+            Wouldn't it be great to use your data—personal or business—stored inside your premises, as your private knowledge base? Wouldn't it
+            be great to be able to identify insights and locate hidden information using a <span class="highlight">state-of-the-art mapping system</span>? Wouldn't it be great to
+            have the ability to upgrade this system without incurring downtimes?
+          </p>  
+        </div>
+        <div class="content-block">
+          <p>
+            <span class="product-name">Vide</span> is capable of identifying and leveraging context extensively. It searches within a confinement of data, looking for related
+            information without being explicitly told where to look. It uses its unique information augmentation system from your own data and
+            external sources. <span class="product-name">Vide</span> in real-world applications is expected to lead to <span class="highlight">new innovations</span> in many industries.
+          </p>   
+        </div>
+        <div class="content-block">
+          <p>
+            <span class="product-name">Vide</span> is more than just an innovation; it is a canvas for human imagination. <span class="product-name">Vide</span> empowers innovators, creators, and
+            visionaries to <span class="highlight">push the boundaries</span> of what is possible. The versatility and transformative potential of KREI, Inc. ensure that its
+            applications are only limited by creativity and ambition.
+          </p>    
+        </div>
+        <div class="content-block">
+          <p>
+            As forward-thinking leaders, you are presented with an opportunity to be at the forefront of groundbreaking innovation that
+            transcends existing technological boundaries and ushers in a <span class="highlight">new era of limitless possibilities</span>.
+          </p>
+        </div>
+      </div> 
+    </div>
+  </section>
 </div>
-</section>
     <!-- Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
