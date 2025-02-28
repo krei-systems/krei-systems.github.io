@@ -48,7 +48,6 @@ markup:
 
 params:
   moto: "EXPLORE. DISCOVER. CREATE."
-  description: "Harnessing knowledge, driving resourcefulness, fostering empowerment, and igniting innovation—KREI transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress."
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
