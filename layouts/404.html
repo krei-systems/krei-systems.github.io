@@ -1,20 +1,53 @@
 {{ define "main"}}
-<main id="main">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
-        <div class="max-w-screen-sm mx-auto text-center">
-            <h1 class="mb-4 font-black tracking-tight capitalize text-8xl lg:text-7xl xl:text-9xl dark:text-white">
-                404
-            </h1>
-            <p class="mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl dark:text-white">
-                Ooooops, something&rsquo;s missing.
-            </p>
-            <p class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">Sorry, we can't find that page.
-                You'll
-                find lots to explore on the home page. </p>
-            <a href="/"
-                class="inline-flex text-white bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">Back
-                to Homepage</a>
+<main id="main" style="background-color: #1A140B; font-family: monospace; color: #CCCCCC; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+  <div class="w-full px-4 py-8 mx-auto lg:py-16 lg:px-6" style="max-width: 100%;">
+    <div class="mx-auto" style="max-width: 800px;">
+      <div style="background-color: #1A140B; border: 1px solid #444; border-radius: 5px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); padding: 20px; text-align: left;">
+        <div style="margin-bottom: 10px; font-size: clamp(14px, 3vw, 16px);">Evaluating call:</div>
+        <div style="color: #AAAAAA; margin-bottom: 15px; font-size: clamp(14px, 3vw, 16px); word-break: break-word;">(FIND-PAGE (URL-ROUTE (REQUESTED-PATH)))</div>
+        <div style="margin-bottom: 10px; font-size: clamp(14px, 3vw, 16px);">With arguments:</div>
+        <div style="color: #FD8128; font-weight: bold; font-size: clamp(5rem, 20vw, 9rem); line-height: 1; margin-bottom: 20px; text-align: left;">
+          404
         </div>
+        <div style="color: #FF3333; margin: 20px 0; font-size: clamp(14px, 3vw, 16px);">[Condition of type PAGE-NOT-FOUND-ERROR]</div>
+        <div style="margin: 20px 0 10px 0; font-size: clamp(14px, 3vw, 16px);">Restarts:</div>  
+        <div style="margin: 15px 0; cursor: pointer; padding: 10px; border-radius: 5px; transition: background-color 0.2s;" 
+             onmouseover="this.style.backgroundColor='#333'" 
+             onmouseout="this.style.backgroundColor='transparent'"
+             onclick="window.location.href='/'">
+          <span style="display: inline-block; width: 25px; text-align: right; margin-right: 10px; font-size: clamp(14px, 3vw, 16px);">0:</span>
+          <span style="color: #FD8128; font-weight: bold; font-size: clamp(14px, 3vw, 16px);">[HOME-PAGE]</span>
+          <span style="margin-left: 5px; font-size: clamp(14px, 3vw, 16px);">Return to the homepage</span>
+        </div>
+        <div style="margin: 15px 0; cursor: pointer; padding: 10px; border-radius: 5px; transition: background-color 0.2s;" 
+             onmouseover="this.style.backgroundColor='#333'" 
+             onmouseout="this.style.backgroundColor='transparent'"
+             onclick="window.history.back()">
+          <span style="display: inline-block; width: 25px; text-align: right; margin-right: 10px; font-size: clamp(14px, 3vw, 16px);">1:</span>
+          <span style="color: #FD8128; font-weight: bold; font-size: clamp(14px, 3vw, 16px);">[BACK]</span>
+          <span style="margin-left: 5px; font-size: clamp(14px, 3vw, 16px);">Go back to previous page</span>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <script>
+    document.addEventListener('keydown', function(event) {
+      if (event.key === '0') {
+        window.location.href = '/';
+      } else if (event.key === '1') {
+        window.history.back();
+      }
+    });
+    const options = document.querySelectorAll('[style*="cursor: pointer"]');
+    options.forEach(option => {
+      option.addEventListener('touchstart', function() {
+        this.style.backgroundColor = '#333';
+      });
+      option.addEventListener('touchend', function() {
+        this.style.backgroundColor = 'transparent';
+      });
+    });
+  </script>
 </main>
 {{ end }}

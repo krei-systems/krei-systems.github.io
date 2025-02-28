@@ -32,7 +32,34 @@ p {
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
   color: white !important;
 }
+/* sphere */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 150px;
+}
 
+.sphere-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.text-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+}
 /* Navigation */
 .nav-link {
   position: relative;
@@ -143,7 +170,6 @@ p {
   color: white;
   margin: 0 auto;
   max-width: 1200px;
-  /* Added top margin for spacing */
   margin-top: -1rem;
 }
 
@@ -319,7 +345,7 @@ body > header,
 .differentiators-heading {
   font-family: 'Roboto', sans-serif;
   font-size: clamp(2.5rem, 4vw, 2.5rem);
-  font-weight: 700;
+  font-weight: 400;
   color: #FD8128;
   margin-top: 2.5rem;
   margin-bottom: 2rem;

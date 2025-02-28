@@ -27,14 +27,12 @@
     </div>
   </div>
   {{ if eq .File.ContentBaseName "vide" }}
-  <!-- Special styling for vide.md -->
   <div class="max-w-4xl px-6 pt-6 pb-16 mx-auto prose lg:prose-xl dark:prose-invert dark:text-white">
     <div class="vide-content">
       {{.Content}}
     </div>
   </div>
   {{ else }}
-  <!-- Regular styling for other pages -->
   <div class="max-w-2xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white">
     {{.Content}}
   </div>

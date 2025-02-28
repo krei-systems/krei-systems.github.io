@@ -8,7 +8,7 @@ layout: team
   <div class="container">
     <section class="team-section">
       <div class="section-header">
-        <h2 class="section-title">Core Team</h2>
+        <h2 class="section-title" style="color: #FD8128; padding-bottom: 50px;">CORE TEAM</h2>
       </div>
       <div class="team-grid1">
         <div class="team-member">
@@ -35,7 +35,7 @@ layout: team
           {{< asset-img src="5.png" alt="KREI Vide Technology" class="gallery-image" >}}
           <div class="member-info">
             <h3 class="member-name">Adrian Villareal</h3>
-            <span class="member-role">Software Engineer</span>
+            <span class="member-role">Junior Software Engineer</span>
             <p class="member-bio">Adi holds a Bachelor's degree in Computer Science, specializing in Data Science from Adamson University in the Philippines. He is a Software Engineer at Krei Systems. After completing his college years, he decided to switch to the vast field of Artificial Intelligence. With a passion for innovation, Adi is focusing into a diverse skill set such as system administration, web development and Lisp programming—the second-oldest high-level programming language still in use after Fortran. He believes that the true mark of greatness is not only found in the achievement or accolades one gathers, but also in how they manage the responsibilities that come with that success.</p>
           </div>
         </div>

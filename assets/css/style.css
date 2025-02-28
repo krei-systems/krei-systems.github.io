@@ -1923,7 +1923,7 @@ body > header,
 .differentiators-heading {
   font-family: 'Roboto', sans-serif;
   font-size: clamp(2.5rem, 4vw, 2.5rem);
-  font-weight: 700;
+  font-weight: 400;
   color: #FD8128;
   margin-top: 2.5rem;
   margin-bottom: 2rem;
