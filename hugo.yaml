@@ -49,37 +49,11 @@ markup:
 params:
   description: "Krei transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress."
   moto: "EXPLORE. DISCOVER. CREATE."
-  og_image: "images/g4.png"
-  image: "/assets/images/global/g4.png"
+  og_image: "/images/g4.png"
+  image: "/images/global/g4.png"
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
-
-  logos:
-      - identifier: a
-        image: "/assets/images/global/l1.png"
-        alt: "a"
-      - identifier: b
-        image: "/assets/images/global/l2.png"
-        alt: "b"
-      - identifier: c
-        image: "/assets/images/global/l3.png"
-        alt: "c"
-      - identifier: d
-        image: "/assets/images/global/l4.png"
-        alt: "d"
-
-  social_media:
-    github:
-      enabled: true
-      url: ''
-    facebook:
-      enabled: true
-      url: ''
-    twitter:
-      enabled: true
-      url: ''
-    
 menus:
   main:
   - name: Home
