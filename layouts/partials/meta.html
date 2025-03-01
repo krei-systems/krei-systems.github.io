@@ -1,27 +1,28 @@
 <!-- HTML Meta Tags -->
-<title itemprop="name">{{if .IsHome}} {{ $.Site.Params.description }} | {{ .Title }}
+<title itemprop="name">
+    {{if .IsHome}} {{ $.Site.Params.description }} | {{ $.Site.Title }}
     {{else}} {{ .Title }} {{end}}
 </title>
 <meta name="description" content="Krei transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress." />
 
 <!-- Facebook/Open Graph Meta Tags -->
-<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:title" content="{{if .IsHome}}{{ $.Site.Title }}{{else}}{{ .Title }} | {{ $.Site.Title }}{{end}}" />
 <meta property="og:description" content="Krei transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress." />
-<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:site_name" content="{{ $.Site.Title }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:locale" content="en">
-<meta property="og:image" content="{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ .Site.BaseURL }}images/g4.png{{ end }}" />
-<meta property="og:image:secure_url" content="{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ .Site.BaseURL }}images/g4.png{{ end }}" />
+<meta property="og:image" content="{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ (printf "%simages/g4.png" $.Site.BaseURL) }}{{ end }}" />
+<meta property="og:image:secure_url" content="{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ (printf "%simages/g4.png" $.Site.BaseURL) }}{{ end }}" />
 <meta property="og:type" content="{{if .IsHome}}website{{else}}article{{end}}" />
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:title" content="{{if .IsHome}}{{ $.Site.Title }}{{else}}{{ .Title }} | {{ $.Site.Title }}{{end}}" />
 <meta name="twitter:description" content="Krei transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress." />
-<meta property="twitter:domain" content="{{ .Site.Params.domain | default (replaceRE "^https?://([^/]+).*" "$1" .Site.BaseURL) }}">
+<meta property="twitter:domain" content="{{ $.Site.Params.domain | default (replaceRE "^https?://([^/]+).*" "$1" $.Site.BaseURL) }}">
 <meta property="twitter:url" content="{{ .Permalink }}">
-<meta name="twitter:image" content="{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ .Site.BaseURL }}images/g4.png{{ end }}" />
+<meta name="twitter:image" content="{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ (printf "%simages/g4.png" $.Site.BaseURL) }}{{ end }}" />
 
 <!-- Additional Meta Tags -->
-<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta itemprop="name" content="{{ .Title }}" />
 <meta name="application-name" content="{{ .Title }}" />
