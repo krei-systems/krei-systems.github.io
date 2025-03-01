@@ -1,26 +1,20 @@
-<title itemprop="name">{{if .IsHome}} {{ $.Site.Params.description }} | {{ .Title }}
-    {{else}} {{ .Title }} | {{ .Site.Title }} {{end}}
-</title>
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+<!-- HTML Meta Tags -->
+<title>Krei Systems | Krei Systems</title>
+<meta name="description" content="Krei transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress.">
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://krei.systems">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Krei Systems | Krei Systems">
+<meta property="og:description" content="Krei transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress.">
+<meta property="og:image" content="https://krei.systems/images/g4.png">
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-<meta name="twitter:image" content="{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ .Site.Params.og_image | absURL }}{{ end }}" />
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="krei.systems">
+<meta property="twitter:url" content="https://krei.systems">
+<meta name="twitter:title" content="Krei Systems | Krei Systems">
+<meta name="twitter:description" content="Krei transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress.">
+<meta name="twitter:image" content="https://krei.systems/images/g4.png">
 
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:image" content="{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ .Site.Params.og_image | absURL }}{{ end }}" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:type" content="{{if .IsHome}}website{{else}}article{{end}}" />
-<meta property="og:site_name" content="{{ .Site.Title }}" />
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
