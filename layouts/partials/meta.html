@@ -1,11 +1,11 @@
 <!-- HTML Meta Tags -->
 <title itemprop="name">{{if .IsHome}} {{ $.Site.Params.description }} | {{ .Title }}
-    {{else}} {{ .Title }} | {{ .Site.Title }} {{end}}
+    {{else}} {{ .Title }} {{end}}
 </title>
 <meta name="description" content="Krei transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress." />
 
 <!-- Facebook/Open Graph Meta Tags -->
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:title" content="{{ .Title }}" />
 <meta property="og:description" content="Krei transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress." />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
@@ -16,7 +16,7 @@
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="twitter:title" content="{{ .Title }}" />
 <meta name="twitter:description" content="Krei transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress." />
 <meta property="twitter:domain" content="{{ .Site.Params.domain | default (replaceRE "^https?://([^/]+).*" "$1" .Site.BaseURL) }}">
 <meta property="twitter:url" content="{{ .Permalink }}">
@@ -24,4 +24,4 @@
 
 <!-- Additional Meta Tags -->
 <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="application-name" content="{{ .Title }}" />
