@@ -3,6 +3,7 @@ title: "Team"
 draft: false
 language: en
 layout: team
+featured_image: "/images/g4.png"
 ---
 <section id="team-section-id">
   <div class="container">

@@ -47,6 +47,7 @@ markup:
       xhtml: false
 
 params:
+  description: "Krei transforms the synergy of human potential and technology. We elevate people, optimize processes, and redefine technology to create lasting impact and sustainable progress."
   moto: "EXPLORE. DISCOVER. CREATE."
   og_image: "images/g4.png"
   disable_theme_toggle: false
