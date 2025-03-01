@@ -1,4 +1,4 @@
-baseURL: 'krei.systems'
+baseURL: 'https://krei.systems/'
 title: Krei Systems
 languageCode: en-us
 DefaultContentLanguage: en
@@ -48,6 +48,7 @@ markup:
 
 params:
   moto: "EXPLORE. DISCOVER. CREATE."
+  og_image: "images/g4.png"
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
