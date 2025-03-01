@@ -153,4 +153,51 @@
     font-family: Georgia, Cambria, Palatino, "Palatino Linotype", "Times New Roman", Times, serif;
   }
 }
+.member-image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: -20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  margin-left: -1px;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+
+.social-icon[title="LinkedIn"] {
+  font-weight: bold;
+  background-color: #0077b5;
+  color: white;
+  padding: 1px 8px;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+}
+@media (max-width: 767px) {
+  .team-member {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .member-image-container {
+    margin-bottom: 15px;
+  }
+}
+
 </style>
