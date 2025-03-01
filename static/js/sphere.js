@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     0.1, 
     1000
   );
+
   camera.position.z = isMobile ? 35 : 30;
   
   const renderer = new THREE.WebGLRenderer({ 
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     alpha: true,
     powerPreference: 'high-performance'
   });
+
   renderer.setSize(dimensions.width, dimensions.height);
   renderer.setClearColor(0x100B06, 1);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1.5 : 2));
@@ -45,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       opacity: 0.5, emissive: 0xFD8128, emissiveIntensity: 0.2
     })
   );
+
   sphereGroup.add(sphere);
   
   const innerSphere = new THREE.Mesh(
@@ -54,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       emissive: 0xFD8128, emissiveIntensity: 0.3
     })
   );
+
   sphereGroup.add(innerSphere);
   
   scene.add(new THREE.AmbientLight(0xffffff, 0.3));
@@ -94,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       depthWrite: false
     })
   );
+
   sphereGroup.add(particles);
   
   let isDragging = false;
@@ -211,7 +216,6 @@ document.addEventListener('DOMContentLoaded', () => {
     renderer.setSize(newDimensions.width, newDimensions.height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, newIsMobile ? 1.5 : 2));
     
-    // Update text sizing
     updateTextStyles(newDimensions.width);
   };
   
