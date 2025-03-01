@@ -22,6 +22,7 @@
     {{ $ogImage = (printf "%simages/global/g4.png" $.Site.BaseURL) }}
   {{ end }}
 {{ end }}
+
 <meta property="og:image" content="{{ $ogImage }}" />
 <meta property="og:image:secure_url" content="{{ $ogImage }}" />
 <meta property="og:type" content="{{if .IsHome}}website{{else}}article{{end}}" />
@@ -33,7 +34,17 @@
 <meta property="twitter:domain" content="{{ $.Site.Params.domain | default (replaceRE "^https?://([^/]+).*" "$1" $.Site.BaseURL) }}">
 <meta property="twitter:url" content="{{ .Permalink }}">
 <meta name="twitter:image" content="{{ $ogImage }}" />
-
+{{ $ogImage := "" }}
+{{ if .Params.featured_image }}
+  {{ $ogImage = .Params.featured_image | absURL }}
+{{ else }}
+  {{ $image := resources.Get "images/global/g4.png" }}
+  {{ if $image }}
+    {{ $ogImage = $image.Permalink }}
+  {{ else }}
+    {{ $ogImage = (printf "%simages/global/g4.png" $.Site.BaseURL) }}
+  {{ end }}
+{{ end }}
 <!-- Additional Meta Tags -->
 <meta itemprop="name" content="{{ .Title }}" />
 <meta name="application-name" content="{{ .Title }}" />
