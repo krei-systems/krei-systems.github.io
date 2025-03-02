@@ -51,6 +51,7 @@ params:
   moto: "EXPLORE. DISCOVER. CREATE."
   og_image: "/images/global/g4.png"
   image: "/images/global/g4.png"
+  Twitter_Image: "/images/global/g4.png"
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
