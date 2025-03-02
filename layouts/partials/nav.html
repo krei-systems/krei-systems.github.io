@@ -8,17 +8,7 @@
     <a href="/team" class="nav-link">Team</a>
   </div>
 </nav>
-<script>
-  document.getElementById('mobileMenuToggle').addEventListener('click', function() {
-    const navLinks = document.getElementById('navLinks');
-    navLinks.classList.toggle('active');
-    if (navLinks.classList.contains('active')) {
-      this.textContent = '✕';
-    } else {
-      this.textContent = '☰';
-    }
-  });
-</script>
+<script src="js/nav.js"></script>
 <style>
 .nav-container {
   background-color: #0A0900;
