@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   camera.position.z = isMobile ? 25 : 30;
-  
+
   const renderer = new THREE.WebGLRenderer({ 
     canvas, 
     antialias: false, 
@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(textOverlay);
   
   const instructionsText = Object.assign(document.createElement('div'), {
-    style: 'position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%); color: #FD8128; font-family: Georgia, Cambria, Palatino, "Palatino Linotype", "Times New Roman", Times, serif; background-color: #100B06; padding: 5px 10px; border-radius: 4px; text-align: center; pointer-events: none; width: 80%; max-width: 300px;'
+    style: 'position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: #FD8128; font-family: Georgia, Cambria, Palatino, "Palatino Linotype", "Times New Roman", Times, serif; background-color: #100B06; padding: 5px 10px; border-radius: 4px; text-align: center; pointer-events: none; width: 80%; max-width: 300px;'
   });
   document.body.appendChild(instructionsText);
 

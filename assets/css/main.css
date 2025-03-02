@@ -161,8 +161,8 @@ p {
 }
 
 .hero-description {
-  font-size: clamp(1rem, 3vw, 1.5rem);
-  line-height: 1.5;
+  font-size: 1.8rem;
+  line-height: 1.7;
   font-weight: 400;
   padding-bottom: 3rem;
   position: relative;
@@ -623,11 +623,21 @@ body > header,
 .text-white.text-base.sm\:text-lg.max-w-4xl.mx-auto.mb-8,
 .epocal-container p,
 .heading-container1 p {
-  font-size: 1rem;
+  font-size: 1.7rem;
   line-height: 1.6;
   padding: 0 1rem;
   max-width: 1000px;
   margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.industries-description {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+  max-width: 1000px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
 }
 
 /* Hero Section Enhancements */
@@ -685,7 +695,7 @@ canvas#cvs {
   }
   
   .heading-container1 .hero-description {
-    font-size: 2rem !important;
+    font-size: 1.7rem !important;
     margin-top: 1.5rem;
     margin-bottom: -8rem;
     padding: 0 0.5rem;
@@ -928,7 +938,6 @@ canvas#cvs {
     justify-content: center;
     width: 50px;
     height: 10px;
-    background-image: radial-gradient(circle, #FD8128 3px, transparent 4px);
     background-size: 15px 10px;
     background-repeat: repeat-x;
     pointer-events: none;
@@ -942,6 +951,28 @@ canvas#cvs {
   .differentiators-card:hover {
     transform: translateY(-3px);
     transition: transform 0.2s ease;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .heading-container1 h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  .heading-container1 .hero-description {
+    font-size: 0.95rem !important;
+  }
+  
+  .logo {
+    margin-bottom: 3rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .epocals-description
+  .industries-description {
+    font-size: 18px !important;
   }
 }
 
