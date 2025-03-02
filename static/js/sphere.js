@@ -1,5 +1,5 @@
 // This code are referenced from three.js—https://codepen.io/search/pens?q=sphere, https://github.com/mrdoob/three.js/blob/master/src/geometries/SphereGeometry.js,
-// https://medium.com/@banyapon/how-to-create-multiple-neon-spheres-with-javascript-and-three-js-263f6c3d0d69, and https://github.com/mrdoob/three.js/blob/master/src/geometries/SphereGeometry.js
+// https://medium.com/@banyapon/how-to-create-multiple-neon-spheres-with-javascript-and-three-js-263f6c3d0d69, https://threejs.org/docs/#api/en/geometries/SphereGeometry and https://github.com/mrdoob/three.js/blob/master/src/geometries/SphereGeometry.js
 document.addEventListener('DOMContentLoaded', () => {
 
   const getWindowDimensions = () => {
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let throttleValue = 0;
   
   if (isMobile) {
-    sphereGroup.rotation.y = 0;
+    sphereGroup.position.y = 0;
   }
   
   const zoomCamera = (direction) => {
@@ -248,34 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   
-  const handleResize = () => {
-    const newDimensions = getWindowDimensions();
-    const newIsMobile = newDimensions.width < 768;
-    
-    camera.aspect = newDimensions.width / newDimensions.height;
-    camera.updateProjectionMatrix();
-    renderer.setSize(newDimensions.width, newDimensions.height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, newIsMobile ? 1.5 : 2));
-    
-    if (newIsMobile) {
-      sphereGroup.position.x = 0;
-      camera.position.z = 25;
-      canvas.style.height = '70vh';
-    } else {
-      sphereGroup.position.x = 0;
-      camera.position.z = 30;
-      canvas.style.height = 'auto';
-    }
-    
-    updateTextStyles(newDimensions.width);
-  };
-  
-  let resizeTimeout;
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(handleResize, 250);
-  });
-  
   const textOverlay = document.createElement('div');
   textOverlay.style.position = 'absolute';
   textOverlay.style.top = isMobile ? '10%' : '15%';
@@ -302,6 +274,35 @@ document.addEventListener('DOMContentLoaded', () => {
   subText.style.margin = '0';
   subText.style.opacity = '0.8';
   
+  textOverlay.appendChild(mainText);
+  textOverlay.appendChild(spacer);
+  textOverlay.appendChild(subText);
+  document.body.appendChild(textOverlay);
+  
+  const container = document.createElement('div');
+  container.style.position = 'relative';
+  container.style.width = '100%';
+  container.style.height = isMobile ? '70vh' : 'auto';
+  canvas.parentNode.insertBefore(container, canvas);
+  container.appendChild(canvas);
+  
+  const instructionsText = document.createElement('div');
+  instructionsText.style.position = 'absolute';
+  instructionsText.style.bottom = isMobile ? '15%' : '20%'; 
+  instructionsText.style.left = '50%';
+  instructionsText.style.transform = 'translateX(-50%)';
+  instructionsText.style.color = '#FD8128';
+  instructionsText.style.fontFamily = 'Georgia, Cambria, Palatino, "Palatino Linotype", "Times New Roman", Times, serif';
+  instructionsText.style.backgroundColor = '#100B06';
+  instructionsText.style.padding = '5px 10px';
+  instructionsText.style.borderRadius = '4px';
+  instructionsText.style.textAlign = 'center';
+  instructionsText.style.pointerEvents = 'none';
+  instructionsText.style.width = '80%';
+  instructionsText.style.maxWidth = '300px';
+  instructionsText.style.zIndex = '10';
+  container.appendChild(instructionsText);
+  
   const updateTextStyles = (width) => {
     const isNarrow = width < 768;
     
@@ -313,20 +314,39 @@ document.addEventListener('DOMContentLoaded', () => {
       'Press SHIFT + ↑/↓ to zoom in/out';
   };
   
-  textOverlay.appendChild(mainText);
-  textOverlay.appendChild(spacer);
-  textOverlay.appendChild(subText);
-  document.body.appendChild(textOverlay);
+  const handleResize = () => {
+    const newDimensions = getWindowDimensions();
+    const newIsMobile = newDimensions.width < 768;
+    
+    camera.aspect = newDimensions.width / newDimensions.height;
+    camera.updateProjectionMatrix();
+    renderer.setSize(newDimensions.width, newDimensions.height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, newIsMobile ? 1.5 : 2));
+    
+    if (newIsMobile) {
+      sphereGroup.position.x = 0;
+      camera.position.z = 25;
+      container.style.height = '70vh';
+    } else {
+      sphereGroup.position.x = 0;
+      camera.position.z = 30;
+      container.style.height = 'auto';
+    }
+    
+    updateTextStyles(newDimensions.width);
+  };
   
-  const instructionsText = Object.assign(document.createElement('div'), {
-    style: 'position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: #FD8128; font-family: Georgia, Cambria, Palatino, "Palatino Linotype", "Times New Roman", Times, serif; background-color: #100B06; padding: 5px 10px; border-radius: 4px; text-align: center; pointer-events: none; width: 80%; max-width: 300px;'
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(handleResize, 250);
   });
-  document.body.appendChild(instructionsText);
-
+  
   updateTextStyles(dimensions.width);
   
   const initialParticlePositions = positions.slice();
   let time = 0;
+  
   const animate = () => {
     requestAnimationFrame(animate);
     
@@ -357,7 +377,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         particlesGeometry.attributes.position.needsUpdate = true;
       }
-    } 
+    }
+    
     renderer.render(scene, camera);
   };
   animate();
