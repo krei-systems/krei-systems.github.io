@@ -8,8 +8,9 @@
     <a href="/team" class="nav-link">Team</a>
   </div>
 </nav>
+
 <style>
-  .nav-container {
+.nav-container {
   background-color: #0A0900;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -27,91 +28,112 @@
   max-width: 75%;
   width: 90%;
 }
-  
-  .logo-section {
-    display: flex;
-    align-items: center;
-    padding: 15px 0;
-  }
-  
-  .logo-text {
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-    margin-left: 8px;
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo-text {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #b3b3b3;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.main-content {
+  margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    padding: 0 15px;
   }
   
   .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(10, 9, 0, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 10px 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-links.active {
     display: flex;
-    align-items: center;
   }
   
   .nav-link {
-    color: #b3b3b3;
-    text-decoration: none;
-    padding: 12px 16px;
-    font-size: 14px;
-    transition: color 0.2s ease;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
   }
   
-  .nav-link:hover {
-    color: white;
-  }
-
   .mobile-menu-button {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-  }
-
-  .main-content {
-    margin-top: 90px;
+    display: block;
   }
   
-  @media (max-width: 768px) {
-    .nav-container {
-      border-radius: 0;
-      width: 100%;
-      top: 0;
-      padding: 0 15px;
-    }
-    
-    .nav-links {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background-color: rgba(10, 9, 0, 0.95);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      flex-direction: column;
-      padding: 10px 0;
-      z-index: 100;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    }
-    
-    .nav-links.active {
-      display: flex;
-    }
-    
-    .nav-link {
-      padding: 15px 20px;
-      width: 100%;
-      text-align: center;
-    }
-    
-    .mobile-menu-button {
-      display: block;
-    }
-    
-    .main-content {
-      margin-top: 70px;
-    }
+  .main-content {
+    margin-top: 70px;
   }
+}
 </style>
-<script src="js/nav.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', function() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+
+      if (navLinks.classList.contains('active')) {
+        this.textContent = '✕';
+      } else {
+        this.textContent = '☰';
+      }
+    });
+  }
+});
+</script>
